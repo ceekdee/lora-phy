@@ -15,6 +15,9 @@ pub mod sx1261_2;
 /// Specific implementation to support Semtech Sx127x chips
 pub mod sx1276_7_8_9;
 
+#[cfg(feature = "lorawan-device")]
+mod lorawan_device;
+
 use embedded_hal_async::delay::DelayUs;
 use interface::*;
 use mod_params::*;
